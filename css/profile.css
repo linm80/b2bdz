@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(../image/main_bg_light.jpg);
+}
+aside{
+    background-color: white;
+    border-right: solid 1px #ee7315;
+}
+
+.center , .center-column , .top , .right , .bottom , .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border: solid 1px black;*/
+    text-align: center;
+}
+
+.center-column{
+    flex-direction: column;
+}
+
+.top { align-items: flex-start;}
+.right { justify-content: flex-end;}
+.bottom { align-items: flex-end;}
+.left { justify-content: flex-start;}
+
+header{
+    border-bottom: 2px solid #ee7315;
+    background-color: white;
+}
+
+.button.is-primary {
+    background-color: white;
+    border-color: #707070 !important;
+    border-radius: 15px 50px 30px 5px;
+    color: #ee7315;
+}
+
+.center-content{
+    
+    z-index: 0;
+}
+
+.company-title{
+    text-align: center;
+}
+
+.menu-list li a{
+    border-bottom: 1px solid #707070;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #ee7315;
+}
+
+.info-title{
+    border-bottom: solid 1px #ee7315;
+}
+
+.info-details:hover{
+    text-decoration: underline !important;
+    text-decoration-color: #ee7315 !important;
+}
+
+.services-border{
+    border-left: solid 2px #ee7315;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+ul:first-child a{
+    border-top: 1px solid #707070;
+}
+
+.contact-last{
+    margin-bottom: 2em !important;
+}
+
+.margin-button{
+    margin-bottom: 1em;
+}
+
+.big-logo{
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+.acceuil{
+    display: none;
+}
+
+.grid-container{
+    display: grid;
+  grid-gap: 20px;
+  grid-template-columns: auto auto auto;
+  padding: 60px;
+}
+
+.img-description{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #ee7315;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+}
+
+.img-wrap:hover .img-description{
+    opacity: 1;
+    visibility: visible;
+    animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+.card{
+    margin: 2em;
+    display: none;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+.services{
+    display:none;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+.show-services{
+    display:block !important;
+    animation: show-services 0.6s 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+}
+.show-page{
+    display:block;
+    animation: slide-page 0.5s ease-in-out forwards;
+}
+
+@keyframes slide-page{
+    form{
+        transform: scaleX(0);
+    }
+    to{
+        transform: scaleX(1);
+    }
+}
+
+@keyframes show-services{
+    0% {
+        transform: rotateX(-100deg);
+        transform-origin: top;
+        opacity: 0;
+      }
+      100% {
+        transform: rotateX(0deg);
+        transform-origin: top;
+        opacity: 1;
+      }
+}
+
+@keyframes fade-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+.mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: #ee7315;
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: black;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #ee7315;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
