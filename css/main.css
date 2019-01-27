@@ -288,6 +288,25 @@ a.navbar-item:hover{
       }
 
 
+      .services{
+          background-color: #1f3957;
+          background-image: radial-gradient(ellipse at center -50%, #18334f 0%,#18334f 18%,#192532 57%,#192532 100%);
+          color: rgba(255, 255, 255, 0.75);
+      }
+      .services .subtitle{
+          color: rgba(255, 255, 255, 0.75);
+      }
+      .services h1{
+        color: rgba(255, 255, 255, 0.75);
+        border-bottom: solid 1px #ee7315;
+        padding-bottom: 1em;
+    }
+
+    .companies h1{
+        border-bottom: solid 1px #ee7315;
+        padding-bottom: 1em;
+    }
+
 
   @-webkit-keyframes wobble-hor-bottom {
     0%,
