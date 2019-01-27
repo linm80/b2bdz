@@ -178,6 +178,12 @@ a.navbar-item:hover{
       font-size: 18px;
   }
 
+  
+  #signin .input{
+        color: #4a4a4a;
+        font-size: 18px;
+}
+
   #signin .input:active{
       box-shadow: 0 0 0 0.125em rgba(238, 115, 21, 0.25);
   }
@@ -207,6 +213,79 @@ a.navbar-item:hover{
 	        animation: heartbeat 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   }
 
+  #signup{
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+ 
+  
+    #signup .container{
+        top: 40px;
+    }
+  
+    #signup .title{
+        color: rgba(255, 255, 255, 0.75);
+        /* background-color: white; */
+  
+    }
+  
+    #signup .input::placeholder{
+        font-size: 18px;
+    }
+
+    #signup .input{
+            color: #4a4a4a;
+            font-size: 18px;
+    }
+  
+    #signup .input:active{
+        box-shadow: 0 0 0 0.125em rgba(238, 115, 21, 0.25);
+    }
+    #signup .input:focus{
+      box-shadow: 0 0 0 0.125em rgba(238, 115, 21, 0.25);
+      }
+  
+    #signup .icon{
+        font-size: 25px;
+        background-color:white;
+    }
+    #signup .icon:hover{
+      background-color:white;
+      color: #ee7315;
+  }
+    #signup .button{
+        color: #262626;
+        border-color: #b5b5b5;
+    }
+    #signup .button:hover{
+      border-color: #ee7315;
+    }
+  
+    .show-signup{
+        display: block !important;
+        -webkit-animation: heartbeat 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                  animation: heartbeat 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+    #signup p{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #ee7315;
+        color: #fff;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity .2s, visibility .2s;
+      }
+      
+      #signup figure:hover p{
+          opacity: 1;
+          visibility: visible;
+          animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+      }
 
 
 

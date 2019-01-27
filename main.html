@@ -20,8 +20,8 @@
             </div>
             <div class="column right with-divider">
                 <a href="#" class="navbar-item">Acceuil</a>
-                <a href="#" class="navbar-item">Services</a>
-                <a href="#" class="navbar-item">Information</a>
+                <a href="#services" class="navbar-item">Services</a>
+                <a href="#companies" class="navbar-item">Information</a>
                 <div class="navbar-divider"></div>
             </div>
             <div class="column left">
@@ -69,6 +69,74 @@
 
         </div>
 
+        <div id="signup" class="is-fullheight is-overlay"  style="display:none;">
+          <div class="container has-text-centered is-fullheight">
+              <div class="column is-4 is-offset-4">
+                  
+                  <span class="icon" id="close-signup">
+                    <i class="fa fa-times"></i>
+                  </span>
+                  
+                  <div class="box center-column">
+                      <h3 class="title has-text-light">S'inscrire</h3>
+                      <form class="center-column">
+                          <div class="field">
+                              <div class="control">
+                                  <input class="input is-large" type="text" placeholder="Nom de la Societe" autofocus="">
+                              </div>
+                          </div>
+
+                          <div class="field">
+                            <div class="control">
+                                <input class="input is-large" type="tel" placeholder="Numero telephone" autofocus="">
+                            </div>
+                          </div>
+
+                          <div class="field">
+                            <div class="control">
+                                <input class="input is-large" type="email" placeholder="E-mail de l'entreprise" autofocus="">
+                            </div>
+                          </div>
+
+                          <div class="field">
+                            <div class="control">
+                                <input class="input is-large" type="tel" placeholder="FAX" autofocus="">
+                            </div>
+                          </div>
+
+                          <div class="field">
+                            <div class="control">
+                                <input class="input is-large" type="url" placeholder="Website de l'entreprise" autofocus="">
+                            </div>
+                          </div>
+                          <div class="field">
+                            <div class="control">
+                                <input class="input is-large" type="number" placeholder="Duree d'abonnement" autofocus="">
+                            </div>
+                          </div>
+
+                          <div class="img-wrap">
+                            <a href="#">
+                              <figure class="avatar image is-128x128">
+                                <img src="./image/main_photo.jpg">
+                                <p class="img-description center">
+                                  <span class="icon">
+                                    <i class="fas fa-plus"></i>
+                                  </span>
+                                </p>
+                              </figure>
+                            </a>
+                          </div>
+                          <h3 class="subtitle is-6">Ajouter une copie de votre registre de commerce</h3>
+
+                          <button class="button is-block">S'inscrire</button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+
         <div class="hero-body">
             <div class="is-overlay has-text-centered" style="top:200px;">
               <h1>
@@ -101,7 +169,7 @@
           </div>
       </section>
 
-      <section class="section companies">
+      <section class="section companies" id="companies">
         <div class="container center-column">
           <h1 class="title center">Entreprise a la une</h1>
           <div class="container" id="grid">
@@ -280,7 +348,7 @@
 
       </section>
 
-      <section class="section services">
+      <section class="section services" id="services">
         <div class="container">
           <div class="center-column">
             <h1 class="title">Nos services</h1>
@@ -343,7 +411,7 @@
       <footer class="footer">
           <div class="content has-text-centered">
             <p>
-              <strong>B2BDZ</strong> by <a href="https://web.facebook.com/kindmindinm">inm</a>. 2019 ...
+              An early version of <strong>B2BDZ</strong> {strictly static} by <a href="https://web.facebook.com/kindmindinm">inm</a>. 2019 ...
               
             </p>
           </div>
@@ -351,12 +419,22 @@
 
         <script>
           var signin = document.getElementById('signin');
+          var signup = document.getElementById('signup');
 
           document.getElementById('sign-in').addEventListener('click',function(){
             signin.classList.add('show-signin');
           });
           document.getElementById('close-signin').addEventListener('click',function(){
             signin.classList.remove('show-signin');
+          });
+
+          document.getElementById('sign-up').addEventListener('click',function(){
+            signin.classList.remove('show-signin');
+            signup.classList.add('show-signup');
+            
+          });
+          document.getElementById('close-signup').addEventListener('click',function(){
+            signup.classList.remove('show-signup');
           });
 
 
