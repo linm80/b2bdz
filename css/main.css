@@ -260,16 +260,8 @@ a.sign-button:focus{
         background-color: rgba(0, 0, 0, 0.5);
     }
 
- 
-  
-    #signup .container{
-        top: 40px;
-    }
-  
     #signup .title{
-        color: rgba(255, 255, 255, 0.75);
-        /* background-color: white; */
-  
+        color: rgba(255, 255, 255, 0.75);  
     }
   
     #signup .input::placeholder{
@@ -327,6 +319,15 @@ a.sign-button:focus{
           opacity: 1;
           visibility: visible;
           animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+      }
+
+      .select:not(.is-multiple):not(.is-loading)::after{
+          /* color: #ee7315; */
+          border-color: #ee7315 !important;
+      }
+      .select select:focus, .select select.is-focused, .select select:active, .select select.is-active {
+        border-color: #ee7315;
+        box-shadow: 0 0 0 0.125em rgba(238, 115, 21, 0.25);
       }
 
 
