@@ -42,11 +42,11 @@ a.navbar-item:hover{
     border : 0px !important;
 }
 
-.button {
+.connect-button  {
     background-color: transparent;
     border-color: #ee7315;
     border-width: 1px;
-    border-radius: 25px;
+    border-radius: 15px 25px 50px 15px;
     color: rgba(255, 255, 255, 0.75);
     cursor: pointer;
     justify-content: center;
@@ -61,6 +61,48 @@ a.navbar-item:hover{
   a.connect-button:hover{
       background-color: #ee7315 !important;
       border-width: 0px;
+  }
+  a.connect-button:active{
+    background-color: #ee7315 !important;
+    border-width: 0px;
+    }
+    a.connect-button:focus{
+        background-color: #ee7315 !important;
+        border-width: 0px;
+        color:white;
+        }
+
+  .sign-button{
+    background-color: transparent;
+    border-color: #ee7315;
+    border-width: 1px;
+    border-radius: 50px 15px 15px 25px;
+    color: rgba(255, 255, 255, 0.75);
+    cursor: pointer;
+    justify-content: center;
+    padding-bottom: calc(0.375em - 1px);
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    padding-top: calc(0.375em - 1px);
+    text-align: center;
+    white-space: nowrap;
+  }
+  a.sign-button:hover{
+      background-color: #ee7315 !important;
+      border-width: 0px;
+  }
+  a.sign-button:active{
+    background-color: #ee7315 !important;
+    border-width: 0px;
+}
+a.sign-button:focus{
+    background-color: #ee7315 !important;
+    border-width: 0px;
+    color: white;
+}
+
+  #sign-up{
+      margin-right:1em;
   }
 
   .hero-body h1 {
@@ -209,8 +251,8 @@ a.navbar-item:hover{
 
   .show-signin{
       display: block !important;
-      -webkit-animation: heartbeat 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: heartbeat 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   }
 
   #signup{
@@ -264,8 +306,8 @@ a.navbar-item:hover{
   
     .show-signup{
         display: block !important;
-        -webkit-animation: heartbeat 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-                  animation: heartbeat 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
 
     #signup p{
@@ -507,4 +549,29 @@ a.navbar-item:hover{
     }
   }
   
+  
+@-webkit-keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
   
