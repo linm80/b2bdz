@@ -297,6 +297,50 @@ ul:first-child a{
     color: #ee7315;
 }
 
+.offre{
+  border-radius: 200px 50px 50px 50px;
+  border: solid 1px #ee7315;
+}
+
+.offre h2{
+  color: #ee7315;
+}
+.service{
+  border-radius: 100px 50px 50px 50px;
+  border: solid 1px #DAB785;
+}
+
+.service h2{
+  color :#DAB785;
+}
+.event {
+  border-radius: 0px 50px 50px 50px;
+  border: solid 1px #04395E;
+}
+
+.event h2{
+  color: #04395E;
+}
+
+.box-img .image{
+  margin: 1em 2em;
+}
+
+.icons-cont i{
+  font-size: 28px;
+  color: #707070;
+}
+.icons-cont span{
+  margin: 2em 2em;
+}
+section .box{
+  margin: 2em auto;
+}
+
+.show-ext{
+  display: block !important;
+}
+
 
 .container{max-width:1170px; margin:auto;}
 img{ max-width:100%;}
