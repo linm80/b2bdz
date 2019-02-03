@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bulma css -->
+    <link rel="stylesheet" href="./css/bulma.css">
+    <!-- custom page css -->
+    <link rel="stylesheet" href="./css/contact2.css">
+    <!-- local 5.6.3 font awesome -->
+    <link rel="stylesheet" href="./css/all.css">
+    <!-- fontawesome -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> -->
+    <!-- local jquery -->
+    <!-- <link rel="stylesheet" href="./js/jquery3.3.1.js"> -->
+    <title>Mes contacts</title>
+</head>
+<body>
+    <header>    
+        <!--Top navigation bar bla animation-->
+        <div class="topmenu">
+                <!--3 clomuns cote logo cote company name ou cote lnav-->
+                <div class="columns is-marginless">
+                        <!--Logo item 3la akram-->
+                        <div class="column left">
+                          <a href="#" class="navbar-item">
+                              <p class="logo"><h1 class="title is-4"></h1></p>
+                          </a>
+                        </div>
+                        <!--Company name ou 2 icons lmsg ou notification-->
+                        <div class="column left">
+                          <div class="center">
+                              <!-- Comapany name -->
+                              <p class="company-name navbar-item">Nom de la societe  </p>
+                              <!-- notification icon -->
+                              <a href="#" id="show-noti">
+                                <span class="icon navbar-item">
+                                    <i class="far fa-bell"></i>
+                                </span>
+                              </a>
+                              <!-- message icon -->
+                              <a href="#"  id="show-msg">
+                                <span class="icon navbar-item">
+                                    <i class="far fa-comment"></i>
+                                </span>
+                              </a>
+                          </div>
+                        </div>
+                        <!--navigation items droite-->
+                        <div class="column right">
+                          <a href="./wall.html" class="navbar-item" >Les offres</a>
+                          <a href="#" class="navbar-item" style="border-bottom:solid 1px #ee7315;">Mes contacts</a>
+                          <a href="./profile.html" class="navbar-item">Mon profile</a>
+                        </div>
+                      </div>
+        </div>
+    </header>
+    <!-- pop up messages from top -->
+    <div class="box is-overlay center-column msg" id="msg">
+        <span class="icon" id="close-msg">
+                <i class="fas fa-arrow-circle-up"></i>
+        </span>
+        <div class="box"><p class="subtitle">Condor SPA</p> <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit..</p></div>
+        <div class="box"><p class="subtitle">Condor SPA</p> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit...</p></div>
+        <div class="box"><p class="subtitle">COndor SPA</p> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit....</p></div>
+
+    </div>
+    <!-- main section , companies in contact -->
+    <section class="main-content columns is-fullheight">
+        <div class="column center-column">
+
+            <div class="container">
+                 <!-- companies grid -->
+              <div class="container" id="grid">
+                <div class="box">
+                  <div class="center">
+                    <figure class="image ">
+                      <img class="center" src="./image/condor.png" alt="">
+                    </figure>
+                  </div>
+                  <div class="left">
+                    <span class="icon">
+                        <i class="fas fa-home"></i>
+                    </span>
+                    <p>Societe : Condor</p>
+                  </div>
+                  <div class="left">
+                    <span class="icon">
+                        <i class="fas fa-cogs"></i>
+                    </span>
+                    <p>Activite : Assurance</p>
+                  </div>
+                  <div class="left">
+                    <span class="icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </span>
+                    <p>Local : Bouira</p>
+                  </div>
+                  <div class="right">
+                    <a href="./profile.html">Voir plus</a>
+                  </div>
+                </div>
+                <div class="box">
+                    <div class="center">
+                      <figure class="image ">
+                        <img class="center" src="./image/condor.png" alt="">
+                      </figure>
+                    </div>
+                    <div class="left">
+                      <span class="icon">
+                          <i class="fas fa-home"></i>
+                      </span>
+                      <p>Societe : Condor</p>
+                    </div>
+                    <div class="left">
+                      <span class="icon">
+                          <i class="fas fa-cogs"></i>
+                      </span>
+                      <p>Activite : Assurance</p>
+                    </div>
+                    <div class="left">
+                      <span class="icon">
+                          <i class="fas fa-map-marked-alt"></i>
+                      </span>
+                      <p>Local : Bouira</p>
+                    </div>
+                    <div class="right">
+                      <a href="./profile.html">Voir plus</a>
+                    </div>
+                  </div>
+                  <div class="box">
+                      <div class="center">
+                        <figure class="image ">
+                          <img class="center" src="./image/condor.png" alt="">
+                        </figure>
+                      </div>
+                      <div class="left">
+                        <span class="icon">
+                            <i class="fas fa-home"></i>
+                        </span>
+                        <p>Societe : Condor</p>
+                      </div>
+                      <div class="left">
+                        <span class="icon">
+                            <i class="fas fa-cogs"></i>
+                        </span>
+                        <p>Activite : Assurance</p>
+                      </div>
+                      <div class="left">
+                        <span class="icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </span>
+                        <p>Local : Bouira</p>
+                      </div>
+                      <div class="right">
+                        <a href="./profile.html">Voir plus</a>
+                      </div>
+                    </div>
+                    <div class="box">
+                        <div class="center">
+                          <figure class="image ">
+                            <img class="center" src="./image/condor.png" alt="">
+                          </figure>
+                        </div>
+                        <div class="left">
+                          <span class="icon">
+                              <i class="fas fa-home"></i>
+                          </span>
+                          <p>Societe : Condor</p>
+                        </div>
+                        <div class="left">
+                          <span class="icon">
+                              <i class="fas fa-cogs"></i>
+                          </span>
+                          <p>Activite : Assurance</p>
+                        </div>
+                        <div class="left">
+                          <span class="icon">
+                              <i class="fas fa-map-marked-alt"></i>
+                          </span>
+                          <p>Local : Bouira</p>
+                        </div>
+                        <div class="right">
+                          <a href="./profile.html">Voir plus</a>
+                        </div>
+                      </div>
+                      <div class="box">
+                          <div class="center">
+                            <figure class="image ">
+                              <img class="center" src="./image/condor.png" alt="">
+                            </figure>
+                          </div>
+                          <div class="left">
+                            <span class="icon">
+                                <i class="fas fa-home"></i>
+                            </span>
+                            <p>Societe : Condor</p>
+                          </div>
+                          <div class="left">
+                            <span class="icon">
+                                <i class="fas fa-cogs"></i>
+                            </span>
+                            <p>Activite : Assurance</p>
+                          </div>
+                          <div class="left">
+                            <span class="icon">
+                                <i class="fas fa-map-marked-alt"></i>
+                            </span>
+                            <p>Local : Bouira</p>
+                          </div>
+                          <div class="right">
+                            <a href="./profile.html">Voir plus</a>
+                          </div>
+                        </div>
+                        <div class="box" style="margin-bottom:1.5em;">
+                            <div class="center">
+                              <figure class="image">
+                                <img class="center" src="./image/condor.png" alt="">
+                              </figure>
+                            </div>
+                            <div class="left">
+                              <span class="icon">
+                                  <i class="fas fa-home"></i>
+                              </span>
+                              <p>Societe : Condor</p>
+                            </div>
+                            <div class="left">
+                              <span class="icon">
+                                  <i class="fas fa-cogs"></i>
+                              </span>
+                              <p>Activite : Assurance</p>
+                            </div>
+                            <div class="left">
+                              <span class="icon">
+                                  <i class="fas fa-map-marked-alt"></i>
+                              </span>
+                              <p>Local : Bouira</p>
+                            </div>
+                            <div class="right">
+                              <a href="./profile.html">Voir plus</a>
+                            </div>
+                          </div>
+                          <div class="box" style="margin-bottom:1.5em;">
+                            <div class="center">
+                              <figure class="image">
+                                <img class="center" src="./image/condor.png" alt="">
+                              </figure>
+                            </div>
+                            <div class="left">
+                              <span class="icon">
+                                  <i class="fas fa-home"></i>
+                              </span>
+                              <p>Societe : Condor</p>
+                            </div>
+                            <div class="left">
+                              <span class="icon">
+                                  <i class="fas fa-cogs"></i>
+                              </span>
+                              <p>Activite : Assurance</p>
+                            </div>
+                            <div class="left">
+                              <span class="icon">
+                                  <i class="fas fa-map-marked-alt"></i>
+                              </span>
+                              <p>Local : Bouira</p>
+                            </div>
+                            <div class="right">
+                              <a href="./profile.html">Voir plus</a>
+                            </div>
+                          </div>
+                          <div class="box" style="margin-bottom:1.5em;">
+                            <div class="center">
+                              <figure class="image">
+                                <img class="center" src="./image/condor.png" alt="">
+                              </figure>
+                            </div>
+                            <div class="left">
+                              <span class="icon">
+                                  <i class="fas fa-home"></i>
+                              </span>
+                              <p>Societe : Condor</p>
+                            </div>
+                            <div class="left">
+                              <span class="icon">
+                                  <i class="fas fa-cogs"></i>
+                              </span>
+                              <p>Activite : Assurance</p>
+                            </div>
+                            <div class="left">
+                              <span class="icon">
+                                  <i class="fas fa-map-marked-alt"></i>
+                              </span>
+                              <p>Local : Bouira</p>
+                            </div>
+                            <div class="right">
+                              <a href="./profile.html">Voir plus</a>
+                            </div>
+                          </div>
+                          <div class="box" style="margin-bottom:1.5em;">
+                            <div class="center">
+                              <figure class="image">
+                                <img class="center" src="./image/condor.png" alt="">
+                              </figure>
+                            </div>
+                            <div class="left">
+                              <span class="icon">
+                                  <i class="fas fa-home"></i>
+                              </span>
+                              <p>Societe : Condor</p>
+                            </div>
+                            <div class="left">
+                              <span class="icon">
+                                  <i class="fas fa-cogs"></i>
+                              </span>
+                              <p>Activite : Assurance</p>
+                            </div>
+                            <div class="left">
+                              <span class="icon">
+                                  <i class="fas fa-map-marked-alt"></i>
+                              </span>
+                              <p>Local : Bouira</p>
+                            </div>
+                            <div class="right">
+                              <a href="./profile.html">Voir plus</a>
+                            </div>
+                          </div>
+                          <div class="box" style="margin-bottom:1.5em;">
+                            <div class="center">
+                              <figure class="image">
+                                <img class="center" src="./image/condor.png" alt="">
+                              </figure>
+                            </div>
+                            <div class="left">
+                              <span class="icon">
+                                  <i class="fas fa-home"></i>
+                              </span>
+                              <p>Societe : Condor</p>
+                            </div>
+                            <div class="left">
+                              <span class="icon">
+                                  <i class="fas fa-cogs"></i>
+                              </span>
+                              <p>Activite : Assurance</p>
+                            </div>
+                            <div class="left">
+                              <span class="icon">
+                                  <i class="fas fa-map-marked-alt"></i>
+                              </span>
+                              <p>Local : Bouira</p>
+                            </div>
+                            <div class="right">
+                              <a href="./profile.html">Voir plus</a>
+                            </div>
+                          </div>
+                          <div class="box" style="margin-bottom:1.5em;">
+                            <div class="center">
+                              <figure class="image">
+                                <img class="center" src="./image/condor.png" alt="">
+                              </figure>
+                            </div>
+                            <div class="left">
+                              <span class="icon">
+                                  <i class="fas fa-home"></i>
+                              </span>
+                              <p>Societe : Condor</p>
+                            </div>
+                            <div class="left">
+                              <span class="icon">
+                                  <i class="fas fa-cogs"></i>
+                              </span>
+                              <p>Activite : Assurance</p>
+                            </div>
+                            <div class="left">
+                              <span class="icon">
+                                  <i class="fas fa-map-marked-alt"></i>
+                              </span>
+                              <p>Local : Bouira</p>
+                            </div>
+                            <div class="right">
+                              <a href="./profile.html">Voir plus</a>
+                            </div>
+                          </div>
+                          <div class="box" style="margin-bottom:1.5em;">
+                            <div class="center">
+                              <figure class="image">
+                                <img class="center" src="./image/condor.png" alt="">
+                              </figure>
+                            </div>
+                            <div class="left">
+                              <span class="icon">
+                                  <i class="fas fa-home"></i>
+                              </span>
+                              <p>Societe : Condor</p>
+                            </div>
+                            <div class="left">
+                              <span class="icon">
+                                  <i class="fas fa-cogs"></i>
+                              </span>
+                              <p>Activite : Assurance</p>
+                            </div>
+                            <div class="left">
+                              <span class="icon">
+                                  <i class="fas fa-map-marked-alt"></i>
+                              </span>
+                              <p>Local : Bouira</p>
+                            </div>
+                            <div class="right">
+                              <a href="./profile.html">Voir plus</a>
+                            </div>
+                          </div>
+                          <div class="box" style="margin-bottom:1.5em;">
+                            <div class="center">
+                              <figure class="image">
+                                <img class="center" src="./image/condor.png" alt="">
+                              </figure>
+                            </div>
+                            <div class="left">
+                              <span class="icon">
+                                  <i class="fas fa-home"></i>
+                              </span>
+                              <p>Societe : Condor</p>
+                            </div>
+                            <div class="left">
+                              <span class="icon">
+                                  <i class="fas fa-cogs"></i>
+                              </span>
+                              <p>Activite : Assurance</p>
+                            </div>
+                            <div class="left">
+                              <span class="icon">
+                                  <i class="fas fa-map-marked-alt"></i>
+                              </span>
+                              <p>Local : Bouira</p>
+                            </div>
+                            <div class="right">
+                              <a href="./profile.html">Voir plus</a>
+                            </div>
+                          </div>
+                          <div class="box" style="margin-bottom:1.5em;">
+                            <div class="center">
+                              <figure class="image">
+                                <img class="center" src="./image/condor.png" alt="">
+                              </figure>
+                            </div>
+                            <div class="left">
+                              <span class="icon">
+                                  <i class="fas fa-home"></i>
+                              </span>
+                              <p>Societe : Condor</p>
+                            </div>
+                            <div class="left">
+                              <span class="icon">
+                                  <i class="fas fa-cogs"></i>
+                              </span>
+                              <p>Activite : Assurance</p>
+                            </div>
+                            <div class="left">
+                              <span class="icon">
+                                  <i class="fas fa-map-marked-alt"></i>
+                              </span>
+                              <p>Local : Bouira</p>
+                            </div>
+                            <div class="right">
+                              <a href="./profile.html">Voir plus</a>
+                            </div>
+                          </div>
+                          <div class="box" style="margin-bottom:1.5em;">
+                            <div class="center">
+                              <figure class="image">
+                                <img class="center" src="./image/condor.png" alt="">
+                              </figure>
+                            </div>
+                            <div class="left">
+                              <span class="icon">
+                                  <i class="fas fa-home"></i>
+                              </span>
+                              <p>Societe : Condor</p>
+                            </div>
+                            <div class="left">
+                              <span class="icon">
+                                  <i class="fas fa-cogs"></i>
+                              </span>
+                              <p>Activite : Assurance</p>
+                            </div>
+                            <div class="left">
+                              <span class="icon">
+                                  <i class="fas fa-map-marked-alt"></i>
+                              </span>
+                              <p>Local : Bouira</p>
+                            </div>
+                            <div class="right">
+                              <a href="./profile.html">Voir plus</a>
+                            </div>
+                          </div>
+                          <div class="box" style="margin-bottom:1.5em;">
+                            <div class="center">
+                              <figure class="image">
+                                <img class="center" src="./image/condor.png" alt="">
+                              </figure>
+                            </div>
+                            <div class="left">
+                              <span class="icon">
+                                  <i class="fas fa-home"></i>
+                              </span>
+                              <p>Societe : Condor</p>
+                            </div>
+                            <div class="left">
+                              <span class="icon">
+                                  <i class="fas fa-cogs"></i>
+                              </span>
+                              <p>Activite : Assurance</p>
+                            </div>
+                            <div class="left">
+                              <span class="icon">
+                                  <i class="fas fa-map-marked-alt"></i>
+                              </span>
+                              <p>Local : Bouira</p>
+                            </div>
+                            <div class="right">
+                              <a href="./profile.html">Voir plus</a>
+                            </div>
+                          </div>
+              </div></div>    
+        </div>
+
+        
+    </section>
+    <script src="./js/contact.js"></script>
+</body>
+
+</html>

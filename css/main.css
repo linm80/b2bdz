@@ -217,7 +217,7 @@ a.sign-button:focus{
   }
 
   #signin .input::placeholder{
-      font-size: 18px;
+      font-size: 12px;
   }
 
   
@@ -255,9 +255,19 @@ a.sign-button:focus{
 	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   }
 
+  .select-field .control{
+      margin: 1em 1em;
+  }
+
+  #close-signup{
+      margin-bottom: 1em;
+  }
   #signup{
         z-index: 99;
         background-color: rgba(0, 0, 0, 0.5);
+    }
+    #signup .container{
+        top: 80px;
     }
 
     #signup .title{
@@ -265,7 +275,7 @@ a.sign-button:focus{
     }
   
     #signup .input::placeholder{
-        font-size: 18px;
+        font-size: 12px;
     }
 
     #signup .input{
