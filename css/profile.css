@@ -30,11 +30,62 @@ header{
     background-color: white;
 }
 
+#grid{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap:20px;
+  margin-top: 2em;
+}
+
+.box figure{
+  margin-bottom: 2em;
+}
+
+.box:hover .icon{
+  color: #ee7315;
+}
+.box:hover a{
+  color: #ee7315;
+}
+.box .checkbox{
+  margin-top: 1em;
+}
+.box:hover .checkbox{
+  color: #ee7315;
+  margin-top: 1em;
+}
+.box:hover img{
+-webkit-animation: heartbeat 1.5s ease-in-out both;
+        animation: heartbeat 1.5s ease-in-out both;
+}
+
+.box a{
+  color:#000000;
+}
+
 .button.is-primary {
     background-color: white;
     border-color: #707070 !important;
     border-radius: 15px 50px 30px 5px;
     color: #ee7315;
+}
+
+.button.is-primary:active, .button.is-primary.is-active{
+  background-color: #ee7315;
+}
+.button.is-primary:focus:not(:active), .button.is-primary.is-focused:not(:active){
+  box-shadow: 0 0 0 0.125em rgba(238, 115, 21, 0.25);
+}
+.button.is-primary:focus, .button.is-primary.is-focused{
+  background-color: #ee7315;
+}
+
+.select:not(.is-multiple):not(.is-loading)::after{
+  border-color: #ee7315;
+}
+.select select:focus, .select select.is-focused, .select select:active, .select select.is-active{
+  border-color: #ee7315;
+  box-shadow: 0 0 0 0.125em rgba(238, 115, 21, 0.25);
 }
 
 a{

@@ -4465,6 +4465,10 @@ a.box:active {
   height: 256px;
   width: 256px;
 }
+.image.is-512x512{
+  height: 512px;
+  width: 512px;
+}
 .notification {
   background-color: whitesmoke;
   border-radius: 4px;
