@@ -1,0 +1,303 @@
+.hero {
+    // Main hero container
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(63, 63, 63, 0.5)), url(../image/jeff-brown-246391-unsplash.jpg) (center / cover);
+
+    a:hover {
+        border-bottom: solid 2px $primary;
+    }
+
+    // Hero Body Container
+    &-body {
+        h1 {
+            color: $dim_white;
+            font-size: 30px;
+            padding: 10px;
+        }
+
+        #search-box {
+            top:5.25rem;
+
+            .box {
+                width: 95%;
+                background-color: $very_dim_white;
+                border-radius: 25px;
+                height: 80px;
+                @include mobile-view{
+                    flex-direction: column;
+                    height: 160px;
+                }
+                .column {
+                    border-right: solid 1px lighten($color: #000000, $amount: 30%);
+
+                    .input {
+                        background-color: transparent;
+                        border-color: transparent;
+                        color: $dim_white;
+
+                        &:hover {
+                            border-color: transparent;
+                        }
+
+                        &:active {
+                            border-color: transparent;
+                        }
+
+                        &:focus {
+                            border-color: transparent;
+                        }
+
+                        &::placeholder {
+                            color: $dim_white;
+                        }
+                    }
+
+                    .icon {
+                        a {
+                            color: #000;
+                            font-size: 25px;
+                            padding: 5px;
+
+                            &:hover {
+                                border-bottom: 0px;
+                                color: $primary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Hero head | navigation bar
+    &-head {
+        // logo column ie the left one
+        .logo{
+            h1{
+                text-transform: uppercase;
+                color: $dim_white;
+                border: solid 2px $box_shadow_color;
+                border-radius: 250px 25px 25px 100px;
+            }
+        }
+        // navigation menu ie the middle one
+        .right {
+            border-right: solid 2px rgba(112, 112, 112, 0.36);
+
+            .navbar-item {
+                color: $dim_white;
+
+                &:hover {
+                    color: $white !important;
+                    background-color: transparent !important;
+                }
+            }
+        }
+        // sign-in and sign-up buttons , ie the right one
+        .left {
+            .sign-button {
+                margin-right: 1em;
+                background-color: transparent;
+                border: {
+                    color: $orange;
+                    width: 1px;
+                    radius: 50px 15px 15px 25px;
+                };
+                color: $dim_white;
+
+                &:hover {
+                    background-color: $primary;
+                    border-width: 0px;
+                }
+
+                &:active {
+                    background-color: $primary;
+                    border-width: 0px;
+                }
+
+                &:focus {
+                    background-color: $primary;
+                    border-width: 0px;
+                    color: $white;
+                    box-shadow: 0 0 0 0.125em $box_shadow_color;
+                }
+            }
+
+            .connect-button {
+                margin-right: 1em;
+                background-color: transparent;
+                border: {
+                    color: $primary;
+                    width: 1px;
+                    radius: 15px 25px 50px 15px;
+                };
+                color: $dim_white;
+
+                &:hover {
+                    background-color: $primary;
+                    border-width: 0px;
+                }
+
+                &:active {
+                    background-color: $primary;
+                    border-width: 0px;
+                }
+
+                &:focus {
+                    background-color: $primary;
+                    border-width: 0px;
+                    color: $white;
+                    box-shadow: 0 0 0 0.125em $box_shadow_color;
+                }
+            }
+        }
+    }
+
+    // sign-in popup box
+    #signin {
+        z-index: 99;
+        background-color: $half_dim;
+
+        .container {
+            top: 120px;
+            .box{
+                .icon {
+                    font-size: 25px;
+                    background-color: $white;
+        
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+                .field{
+                    .control{
+                        .input {
+                            color: $grey_text;
+                            font-size: 18px;
+                
+                            &::placeholder {
+                                font-size: 12px;
+                            }
+                
+                            &:active {
+                                box-shadow: 0 0 0 0.125em $box_shadow_color;
+                                border-color: $primary;
+                            }
+                
+                            &:focus {
+                                box-shadow: 0 0 0 0.125em $box_shadow_color;
+                                border-color: $primary;
+                            }
+                        }
+                    }
+                }
+                .center-column{
+                    margin-top: 2em;
+                }
+                .button {
+                    color: #262626;
+                    border-color: #b5b5b5;
+                    &:hover {
+                        border-color: $primary;
+                        background-color: $primary;
+                        color: $white;
+                    }
+                }
+            
+                &:hover{
+                    img{
+                        animation: heartbeat 1.5s ease-in-out both;
+                    }
+                }
+            }
+        }
+    }
+    // sign-up popup box
+    #signup {
+        z-index: 99;
+        background-color: $half_dim;
+
+        .container {
+            top: 20px;
+            .box{
+                .icon{
+                    margin-bottom: 1em;
+                }
+                .field{
+                    .two-inline{
+                        margin-right: 1em;
+                    }
+                    .select::after{
+                        border-color: $primary;
+                    }
+                }
+                .input {
+                    color: #4a4a4a;
+                    font-size: 18px;
+        
+                    &::placeholder {
+                        font-size: 12px;
+                    }
+        
+                    &:active {
+                        box-shadow: 0 0 0 0.125em $box_shadow_color;
+                        border-color: transparent;
+                    }
+        
+                    &:focus {
+                        box-shadow: 0 0 0 0.125em $box_shadow_color;
+                        border-color: transparent;
+                    }
+                }
+                .img-wrap{
+                    margin-bottom: 1em;
+                    p {
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        background: $primary;
+                        color: $white;
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: opacity .2s, visibility .2s;
+                        .icon{
+                            background-color: transparent;
+                        }
+                    }
+                    &:hover{
+                        p {
+                            visibility: visible;
+                            animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+                        }
+                    }
+
+                }
+                .icon {
+                    font-size: 25px;
+                    background-color: $white;
+        
+                    &:hover {
+                        background-color: $white;
+                        color: $primary;
+                    }
+                }
+                .button {
+                    color: #262626;
+                    border-color: #b5b5b5;
+        
+                    &:hover {
+                        border-color: $primary;
+                        background-color: $primary;
+                        color: $white;
+                    }
+                }
+                &:hover{
+                    img{
+                        animation: heartbeat 1.5s ease-in-out both;
+                    }
+                }
+            }
+        }
+    }
+}

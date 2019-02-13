@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat');
 body{
     font-family: 'Montserrat', sans-serif;
-}
+} */
 
-.hero{
+/* .hero{
     background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(63, 63, 63, 0.5) ), url(../image/jeff-brown-246391-unsplash.jpg) center / cover;
-}
-
+} */
+/* 
 .center, .center-column, .top, .right, .bottom, .left {
 	display: flex;
 	justify-content: center;
@@ -20,29 +20,29 @@ body{
 .top    { align-items:     flex-start; }
 .right  { justify-content: flex-end;   }
 .bottom { align-items:     flex-end;   }
-.left   { justify-content: flex-start; }
-
+.left   { justify-content: flex-start; } */
+/* 
 .hero a:hover {
     border-bottom: solid 2px #ee7315;
     
-}
-.navbar-item{
+} */
+/* .navbar-item{
     color: rgba(255, 255, 255, 0.75);
 }
 a.navbar-item:hover{
     color: white !important;
     background-color: rgba(0, 0, 0, 0) !important;
-}
+} */
 
-.with-divider{
+/* .with-divider{
     border-right: solid 2px rgba(112, 112, 112, 0.36);
-}
-
+} */
+/* 
 .without-border{
     border : 0px !important;
-}
+} */
 
-.connect-button  {
+/* .connect-button  {
     background-color: transparent;
     border-color: #ee7315;
     border-width: 1px;
@@ -70,9 +70,9 @@ a.navbar-item:hover{
         background-color: #ee7315 !important;
         border-width: 0px;
         color:white;
-        }
+        } */
 
-  .sign-button{
+  /* .sign-button{
     background-color: transparent;
     border-color: #ee7315;
     border-width: 1px;
@@ -99,29 +99,29 @@ a.sign-button:focus{
     background-color: #ee7315 !important;
     border-width: 0px;
     color: white;
-}
+} */
 
-  #sign-up{
+  /* #sign-up{
       margin-right:1em;
-  }
+  } */
 
-  .hero-body h1 {
+  /* .hero-body h1 {
       color: rgba(255, 255, 255, 0.75) !important;
       font-size: 30px;
       padding: 10px;
-  }
+  } */
 
-  .hero-body .box{
+  /* .hero-body .box{
       background-color: rgba(255, 255, 255, 0.25);
       border-radius: 25px;
       height: 80px;
-  }
+  } */
 
-  .hero-body .box .column {
+  /* .hero-body .box .column {
       border-right: solid 1px rgba(52, 52, 52, 1);
-  }
+  } */
 
-  .input{
+  /* .input{
       background-color: transparent;
       border-color: transparent;
       color: rgba(255, 255, 255, 0.75);
@@ -151,9 +151,9 @@ a.sign-button:focus{
 
   .icon a:hover{
       border-bottom: 0px;
-  }
+  } */
 
-  .companies{
+  /* .companies{
       background-color: #f5f5f5;
   }
 
@@ -161,13 +161,13 @@ a.sign-button:focus{
       display: grid;
       grid-template-columns: auto auto auto;
       grid-gap:20px;
-  }
+  } */
 
-  .box figure{
+  /* .box figure{
       margin-bottom: 2em;
-  }
+  } */
 
-  .box:hover .icon{
+  /* .box:hover .icon{
       color: #ee7315;
   }
   .box:hover a{
@@ -176,17 +176,17 @@ a.sign-button:focus{
   .box:hover img{
     -webkit-animation: heartbeat 1.5s ease-in-out both;
 	        animation: heartbeat 1.5s ease-in-out both;
-  }
+  } */
 
-  .box a{
+  /* .box a{
       color:#000000;
   }
 
   .services h1 {
       margin-bottom: 3em;
-  }
+  } */
 
-  .services i{
+  /* .services i{
       font-size: 36px;
       margin-bottom: 1em;
   }
@@ -199,9 +199,9 @@ a.sign-button:focus{
       color: #ee7315;
       -webkit-animation: heartbeat 1.5s ease-in-out both;
 	        animation: heartbeat 1.5s ease-in-out both;
-  }
+  } */
 
-  #signin{
+  /* #signin{
       z-index: 99;
       background-color: rgba(0, 0, 0, 0.5);
   }
@@ -212,7 +212,6 @@ a.sign-button:focus{
 
   #signin .title{
       color: rgba(255, 255, 255, 0.75);
-      /* background-color: white; */
 
   }
 
@@ -224,15 +223,15 @@ a.sign-button:focus{
   #signin .input{
         color: #4a4a4a;
         font-size: 18px;
-}
+} */
 
-  #signin .input:active{
+  /* #signin .input:active{
       box-shadow: 0 0 0 0.125em rgba(238, 115, 21, 0.25);
   }
   #signin .input:focus{
     box-shadow: 0 0 0 0.125em rgba(238, 115, 21, 0.25);
-    }
-
+    } */
+/* 
   #signin .icon{
       font-size: 25px;
       background-color:white;
@@ -240,29 +239,29 @@ a.sign-button:focus{
   #signin .icon:hover{
     background-color:white;
     color: #ee7315;
-}
-  #signin .button{
+} */
+  /* #signin .button{
       color: #262626;
       border-color: #b5b5b5;
   }
   #signin .button:hover{
     border-color: #ee7315;
-  }
+  } */
 
-  .show-signin{
+  /* .show-sign{
       display: block !important;
       -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  }
-
+  } */
+/* 
   .select-field .control{
       margin: 1em 1em;
   }
 
   #close-signup{
       margin-bottom: 1em;
-  }
-  #signup{
+  } */
+  /* #signup{
         z-index: 99;
         background-color: rgba(0, 0, 0, 0.5);
     }
@@ -272,24 +271,24 @@ a.sign-button:focus{
 
     #signup .title{
         color: rgba(255, 255, 255, 0.75);  
-    }
+    } */
   
-    #signup .input::placeholder{
+    /* #signup .input::placeholder{
         font-size: 12px;
     }
 
     #signup .input{
             color: #4a4a4a;
             font-size: 18px;
-    }
+    } */
   
-    #signup .input:active{
+    /* #signup .input:active{
         box-shadow: 0 0 0 0.125em rgba(238, 115, 21, 0.25);
     }
     #signup .input:focus{
       box-shadow: 0 0 0 0.125em rgba(238, 115, 21, 0.25);
-      }
-  
+      } */
+/*   
     #signup .icon{
         font-size: 25px;
         background-color:white;
@@ -297,50 +296,18 @@ a.sign-button:focus{
     #signup .icon:hover{
       background-color:white;
       color: #ee7315;
-  }
-    #signup .button{
+  } */
+    /* #signup .button{
         color: #262626;
         border-color: #b5b5b5;
     }
     #signup .button:hover{
       border-color: #ee7315;
     }
-  
-    .show-signup{
-        display: block !important;
-        -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    }
-
-    #signup p{
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: #ee7315;
-        color: #fff;
-        visibility: hidden;
-        opacity: 0;
-        transition: opacity .2s, visibility .2s;
-      }
-      
-      #signup figure:hover p{
-          opacity: 1;
-          visibility: visible;
-          animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-      }
-
-      .select:not(.is-multiple):not(.is-loading)::after{
-          /* color: #ee7315; */
-          border-color: #ee7315 !important;
-      }
-      .select select:focus, .select select.is-focused, .select select:active, .select select.is-active {
-        border-color: #ee7315;
-        box-shadow: 0 0 0 0.125em rgba(238, 115, 21, 0.25);
-      }
+   */
 
 
+/* 
       .services{
           background-color: #1f3957;
           background-image: radial-gradient(ellipse at center -50%, #18334f 0%,#18334f 18%,#192532 57%,#192532 100%);
@@ -353,14 +320,14 @@ a.sign-button:focus{
         color: rgba(255, 255, 255, 0.75);
         border-bottom: solid 1px #ee7315;
         padding-bottom: 1em;
-    }
+    } */
 
-    .companies h1{
+    /* .companies h1{
         border-bottom: solid 1px #ee7315;
         padding-bottom: 1em;
-    }
+    } */
 
-
+/* 
   @-webkit-keyframes wobble-hor-bottom {
     0%,
     100% {
@@ -584,5 +551,5 @@ a.sign-button:focus{
               transform: scale(1);
       opacity: 1;
     }
-  }
+  } */
   

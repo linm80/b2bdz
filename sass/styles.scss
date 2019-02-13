@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+// Import Montserrat from google fonts
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+
+
+// Set main & secondary colors
+$orange: #ee7315;
+$white: #fff;
+$dim_white: rgba(255, 255, 255, 0.75);
+$very_dim_white: rgba(255, 255, 255, 0.25);
+$half_dim: rgba(0, 0, 0, 0.5);
+$grey_text: #4a4a4a;
+$box_shadow_color: rgba(238, 115, 21, 0.25);
+
+// Set main font
+$family-sans-serif: "Montserrat", sans-serif;
+
+// Update main color
+$primary: $orange;
+
+
+// Responsiveness , width of desktop  
+$mobile-view : 768px;
+@mixin mobile-view {
+    @media (max-width: #{$mobile-view}) {
+        @content;
+    }
+}
+
+// Import Bulma Components
+@import "./utilities/_all.sass";
+@import "./base/_all.sass";
+@import "./components/_all.sass";
+@import "./elements/_all.sass";
+@import "./grid/_all.sass";
+@import "./layout/_all.sass";
+@import "./animations.scss";
+
+// Layout helpers to position elements
+.center, .center-column, .top, .right, .bottom, .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center-column {
+    flex-direction: column;
+}
+.top {
+    align-items: flex-start;
+}
+.right {
+    justify-content: flex-end;
+}
+.bottom {
+    align-items: flex-end;
+}
+
+.left {
+    justify-content: flex-start;
+}
+
+
+
+
+// Show the sign-in and sign-up boxes class in the main page
+.show-sign {
+    display: block !important;
+    -webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+// Hero styles for main page
+@import "./main-hero.scss";
+
+// Entreprise a la une for main page
+@import "./main-companies.scss";
+
+// Nos service for main page 
+@import "./main-services.scss";
+
+
+

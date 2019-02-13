@@ -1,0 +1,28 @@
+#services{
+    background: {
+        color: #1f3957;
+        image: radial-gradient(ellipse at center -50%, #18334f 0%,#18334f 18%,#192532 57%,#192532 100%);
+    }
+    color: $dim_white;
+    .subtitle{
+        color: $dim_white;
+    }
+    h1{
+        color: $dim_white;
+        border-bottom: solid 1px $primary;
+        margin-bottom: 3em;
+    }
+    i{
+        font-size: 36px;
+        margin-bottom: 1em;
+    }
+    .service{
+        text-align: center;
+        &:hover{
+            i{
+                color:$primary;
+                animation: heartbeat 1.5s ease-in-out both;
+            }
+        }
+    }
+}
